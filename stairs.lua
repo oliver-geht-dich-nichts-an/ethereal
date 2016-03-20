@@ -93,3 +93,103 @@ stairs.register_stair_and_slab("redwood_wood", "ethereal:redwood_wood",
 	"Redwood stair",
 	"Redwood Slab",
 	default.node_sound_wood_defaults())
+
+if minetest.get_modpath("moreblocks") then
+
+	--			stairsplus:register_all(modname, subname, recipeitem, {fields})
+
+stairsplus:register_all("ethereal", "crystal_block", "ethereal:crystal_block", {
+		description = "Crystal block",
+		tiles = {"crystal_block.png"},
+		groups = {cracky = 1, falling_node = 1, puts_out_fire = 1, not_in_craft_guide = 1},
+		sounds = default.node_sound_glass_defaults(),
+	})
+
+stairsplus:register_all("ethereal", "icebrick", "ethereal:icebrick", {
+		description = "Ice Brick",
+		tiles = {"brick_ice.png"},
+		groups = {crumbly = 3, melts = 1, not_in_craft_guide = 1},
+		sounds = default.node_sound_glass_defaults(),
+	})
+
+stairsplus:register_all("ethereal", "snowbrick", "ethereal:snowbrick", {
+		description = "Snow Brick",
+		tiles = {"brick_snow.png"},
+		groups = {crumbly = 3, melts = 1, not_in_craft_guide = 1},
+		sounds = default.node_sound_dirt_defaults({
+		footstep = {name = "default_snow_footstep", gain = 0.25},
+		dug = {name = "default_snow_footstep", gain = 0.75},
+	})
+	})
+
+stairsplus:register_all("ethereal", "dry_dirt", "ethereal:dry_dirt", {
+		description = "Dry Dirt",
+		tiles = {"ethereal_dry_dirt.png"},
+		groups = {crumbly = 3, not_in_craft_guide = 1},
+		sounds = default.node_sound_dirt_defaults(),
+	})
+
+stairsplus:register_all("ethereal", "mushroom_trunk", "ethereal:mushroom_trunk", {
+		description = "Mushroom Trunk",
+		tiles = {"mushroom_trunk.png"},
+		groups = {choppy = 2, oddly_breakable_by_hand = 1, flammable = 2, not_in_craft_guide = 1},
+		sounds = default.node_sound_wood_defaults(),
+	})
+
+stairsplus:register_all("ethereal", "mushroom", "ethereal:mushroom", {
+		description = "Mushroom Top",
+		tiles = {"mushroom_block.png"},
+		groups = {choppy = 2, oddly_breakable_by_hand = 1, flammable = 2, not_in_craft_guide = 1},
+		sounds = default.node_sound_wood_defaults(),
+	})
+
+stairsplus:register_all("ethereal", "frost_wood", "ethereal:frost_wood", {
+		description = "Frost Wood",
+		tiles = {"frost_wood.png"},
+		groups = {choppy = 2, oddly_breakable_by_hand = 1, put_out_fire = 1, not_in_craft_guide = 1},
+		sounds = default.node_sound_wood_defaults(),
+	})
+
+stairsplus:register_all("ethereal", "yellow_wood", "ethereal:yellow_wood", {
+		description = "Healing Wood",
+		tiles = {"yellow_wood.png"},
+		groups = {choppy = 2, oddly_breakable_by_hand = 1, put_out_fire = 1, not_in_craft_guide = 1},
+		sounds = default.node_sound_wood_defaults(),
+	})
+
+stairsplus:register_all("ethereal", "palm_wood", "ethereal:palm_wood", {
+		description = "Palm Wood",
+		tiles = {"moretrees_palm_wood.png"},
+		groups = {choppy = 2, oddly_breakable_by_hand = 1, flammable = 3, not_in_craft_guide = 1},
+		sounds = default.node_sound_wood_defaults(),
+	})
+
+stairsplus:register_all("ethereal", "birch_wood", "ethereal:birch_wood", {
+		description = "Birch Wood",
+		tiles = {"moretrees_birch_wood.png"},
+		groups = {choppy = 2, oddly_breakable_by_hand = 1, flammable = 3, not_in_craft_guide = 1},
+		sounds = default.node_sound_wood_defaults(),
+	})
+
+stairsplus:register_all("ethereal", "banana_wood", "ethereal:banana_wood", {
+		description = "Banana Wood",
+		tiles = {"banana_wood.png"},
+		groups = {choppy = 2, oddly_breakable_by_hand = 1, flammable = 3, not_in_craft_guide = 1},
+		sounds = default.node_sound_wood_defaults(),
+	})
+
+stairsplus:register_all("ethereal", "willow_wood", "ethereal:willow_wood", {
+		description = "Willow Wood",
+		tiles = {"willow_wood.png"},
+		groups = {choppy = 2, oddly_breakable_by_hand = 1, flammable = 3, not_in_craft_guide = 1},
+		sounds = default.node_sound_wood_defaults(),
+	})
+
+stairsplus:register_all("ethereal", "redwood_wood", "ethereal:redwood_wood", {
+		description = "Redwood",
+		tiles = {"redwood_wood.png"},
+		groups = {choppy = 2, oddly_breakable_by_hand = 1, flammable = 3, not_in_craft_guide = 1},
+		sounds = default.node_sound_wood_defaults(),
+	})
+
+end
