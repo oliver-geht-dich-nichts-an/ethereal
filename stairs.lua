@@ -94,7 +94,7 @@ stairs.register_stair_and_slab("redwood_wood", "ethereal:redwood_wood",
 	"Redwood Slab",
 	default.node_sound_wood_defaults())
 
-if minetest.get_modpath("moreblocks") then
+if minetest.global_exists("stairsplus") then
 
 	--			stairsplus:register_all(modname, subname, recipeitem, {fields})
 
